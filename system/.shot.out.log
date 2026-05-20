@@ -1,0 +1,11 @@
+============================================================
+Dashboard Bangchak
+App folder    : C:\Users\machm\OneDrive\Desktop\Bangchak Dashboard\system
+System folder : C:\Users\machm\OneDrive\Desktop\Bangchak Dashboard\system
+Excel folder  : C:\Users\machm\OneDrive\Desktop\Bangchak Dashboard\excel
+Opening       : http://127.0.0.1:8001
+Press Ctrl+C to stop the server.
+============================================================
+INFO:     127.0.0.1:57336 - "GET /?verify=1614966683 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57336 - "GET /static/styles.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:57336 - "GET /api/dashboard HTTP/1.1" 200 OK

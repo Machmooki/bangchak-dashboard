@@ -1,0 +1,1 @@
+"""Dashboard Bangchak application package."""

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bangchak Dashboard</title>
+    <link rel="icon" type="image/svg+xml" href="/static/assets/Icon.png" />
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell" data-view="dashboard">
+      <header class="topbar">
+        <div class="brand" aria-label="Bangchak">
+          <img class="brand-logo" src="/static/assets/Logo.png" alt="Bangchak" />
+        </div>
+
+        <nav class="topnav" aria-label="Primary">
+          <a class="topnav-item topnav-item--active" href="#dashboard" data-view-link="dashboard">
+            <img class="topnav-icon" src="/static/assets/Icon-badge/ICON%20Menu%20Dashboard.svg" alt="" aria-hidden="true" />
+            <span>DASHBOARD</span>
+          </a>
+          <a class="topnav-item" href="#analytic" data-view-link="analytic">
+            <img class="topnav-icon" src="/static/assets/Icon-badge/ICON%20Menu%20Analytic.svg" alt="" aria-hidden="true" />
+            <span>ANALYTIC</span>
+          </a>
+          <!-- <a class="topnav-item" href="#">
+            <img class="topnav-icon" src="/static/assets/Icon-badge/ICON%20Menu%20Reports.svg" alt="" aria-hidden="true" />
+            <span>REPORTS</span>
+          </a>
+          <a class="topnav-item" href="#">
+            <img class="topnav-icon" src="/static/assets/Icon-badge/ICON%20Menu%20Target.svg" alt="" aria-hidden="true" />
+            <span>TARGET</span>
+          </a> -->
+        </nav>
+      </header>
+
+      <main class="page-main">
+        <section class="page-view page-view--active" data-view="dashboard">
+          <section class="stage stage--prospecting">
+            <div class="stage-title-row">
+              <h1 class="stage-title">PROSPECTING PROJECT</h1>
+            </div>
+
+            <div class="prospecting-layout">
+              <div class="prospecting-main">
+                <section class="summary-panel" id="summary-panel"></section>
+
+                <section class="metric-tabs" id="metric-tabs"></section>
+
+                <section class="detail-panel">
+                  <div class="detail-title-row">
+                    <span class="detail-accent" aria-hidden="true"></span>
+                    <h2 id="detail-title">Detail Called (Opportunities): PRODUCT OPPORTUNITY</h2>
+                  </div>
+                  <p class="detail-note" id="detail-note"></p>
+                  <div class="detail-grid" id="detail-grid"></div>
+                </section>
+              </div>
+
+              <aside class="donut-panel">
+                <h2 class="panel-title">Total Leads</h2>
+                <div id="lead-donut"></div>
+                <div class="legend-grid" id="lead-legend"></div>
+              </aside>
+            </div>
+
+            <p class="sync-note" id="sync-note" hidden></p>
+          </section>
+        </section>
+
+        <section class="page-view" data-view="analytic">
+          <section class="stage stage--performance stage--bu">
+            <div class="stage-title-row stage-title-row--performance">
+              <h2 class="stage-title stage-title--performance">BU PERFORMANCE</h2>
+              <div class="performance-legend" id="bu-legend"></div>
+            </div>
+
+            <div class="performance-panel performance-panel--bu">
+              <div class="performance-chart performance-chart--bu" id="bu-chart"></div>
+            </div>
+          </section>
+
+          <section class="stage stage--performance stage--division">
+            <div class="stage-title-row stage-title-row--performance">
+              <h2 class="stage-title stage-title--performance">DIVISION PERFORMANCE</h2>
+              <div class="performance-legend" id="division-legend"></div>
+            </div>
+
+            <div class="performance-panel performance-panel--division">
+              <div class="performance-chart performance-chart--division" id="division-chart"></div>
+            </div>
+          </section>
+        </section>
+      </main>
+
+      <script src="/static/app.js"></script>
+    </div>
+  </body>
+</html>
